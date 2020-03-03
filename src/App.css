@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Roboto';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.feedback {
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    box-shadow: inset 5px 5px 15px #bdbdbd, inset -5px -5px 15px #ffffff;
+    border-radius: 20px;
+    background-color: #dedede;
+    width: 100%;
+    border: 1px solid #d3d3d354;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gano {
+    background-color: #f2ff00;
+    box-shadow: inset 5px 5px 20px #b9c119, inset -5px -5px 20px #fbffab;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.casi {
+    background-color: #ff0000;
+    box-shadow: inset 5px 5px 20px #900, inset -5px -5px 20px #ffb1bc;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.caliente {
+    background-color: #ff6e00;
+    box-shadow: inset 5px 5px 20px #c66012, inset -5px -5px 20px #ffd8bb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.d {
+    background-color: #dedede;    
+    color: white;
+    font-family: Times, serif;
+    letter-spacing: px;
+}
+
+.tibio {
+    background-color: #ffd000;
+    box-shadow: inset 5px 5px 20px #bd9c07, inset -5px -5px 20px #f7eab3;
+}
+
+.frio {
+    background-color: #68dcff;
+    box-shadow: inset 5px 5px 20px #1aaad5, inset -5px -5px 20px #d4eff7;
+}
+
+.feedback-text {
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background-color: #dedede;
+}
+
+.grid-container {
+    height: 100vh;
+}
+
+.paper-card {
+    padding: 50px;
+    box-shadow:  10px 10px 40px #bdbdbd, -10px -10px 30px #ffffff;
+    border-radius: 50px;
+    background-color: #dedede;
+    border: 1px solid #d4d4d467;
+}
+
+.paper-card__divider {
+    margin: 20px 0;
 }
