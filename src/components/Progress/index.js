@@ -8,7 +8,7 @@ const Progress = ({attempt, guessList}) => {
 
     if (attempt === 0) {
         return (
-        <Typography style={{ marginTop: '50px' }} variant="h5">
+        <Typography style={{ marginTop: '20px', marginBottom: '20px' }} variant="h5">
                 Todavía no intentaste ninguna vez...
         </Typography>
         )
@@ -16,7 +16,7 @@ const Progress = ({attempt, guessList}) => {
 
     return (
         <div>
-            <Typography style={{ marginTop: '50px' }} variant="h5">
+            <Typography style={{ marginTop: '20px', marginBottom: '20px' }} variant="h5">
                 Intento Nº {attempt}
             </Typography>
             <ul className="progressBar__history">

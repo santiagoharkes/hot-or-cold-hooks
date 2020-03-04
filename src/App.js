@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import { Grid, Typography, Paper, Divider, Button } from '@material-ui/core'
+import { Grid, Typography, Paper } from '@material-ui/core'
 import { StylesProvider } from '@material-ui/core/styles';
 
-import Form from "./components/Form"
-import Progress from "./components/Progress"
-import Info from "./components/Info"
+import Form from "./components/Form/index.js"
+import Progress from "./components/Progress/index.js"
+import Info from "./components/Info/index.js"
+import Button from "./components/Button/index.js"
 import { getInitialState, getFeedback } from "./utils"
 
 import './App.css'
@@ -56,7 +57,7 @@ function App() {
           <Typography align="center" variant="h3" gutterBottom>
             HOT or COLD
           </Typography>
-          <Divider className="paper-card__divider" />
+          <hr className="paper-card__divider" />
           <div className={`feedback ${feedbackCode}`}>
             <h2 className="feedback-text">{feedbackMessage}</h2>
           </div>
@@ -70,14 +71,9 @@ function App() {
             guessList={guessList}
           ></Progress>
           <Button
-            style={{ marginBottom: "15px", marginTop: "20px" }}
-            fullWidth
-            variant="contained"
-            color="primary"
             onClick={resetGame}
-          >
-            Reset Game
-          </Button>
+            title="Reset Game"
+          />
           <Info show={show}></Info>
         </Paper>
       </Grid>

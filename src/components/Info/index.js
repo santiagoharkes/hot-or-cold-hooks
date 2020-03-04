@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-import { Button, DialogTitle, Dialog, DialogContent } from "@material-ui/core";
+import { DialogTitle, Dialog, DialogContent } from "@material-ui/core";
+
+import Button from '../Button'
 
 function Info() {
     const [state, setState] = useState(false)
@@ -28,16 +30,12 @@ function Info() {
                     </ol>
                     ¿Estás listo?
                 </DialogContent>
-                <Button style={{padding: "20px"}} onClick={handleToggle}>¡Quiero jugar YA!</Button>
+                <Button onClick={handleToggle} title="¡Quiero jugar YA!" />
             </Dialog>
             <Button
-            fullWidth
-            variant="contained"
-            color="primary"
             onClick={handleToggle}
-            >
-            ¿Cómo se juega?
-            </Button>
+            title="¿Cómo se juega?"
+            />
         </React.Fragment>
     )
 }

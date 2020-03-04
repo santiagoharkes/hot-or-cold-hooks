@@ -12,9 +12,9 @@ body {
     display: flex;
     align-items: center;
     min-height: 50px;
-    box-shadow: inset 5px 5px 15px #bdbdbd, inset -5px -5px 15px #ffffff;
     border-radius: 20px;
-    background-color: #dedede;
+    background: #dedede;
+    box-shadow:  inset 2px 2px 12px #cecece, inset -4px -6px 12px #eeeeee;
     width: 100%;
     border: 1px solid #d3d3d354;
 }
@@ -67,13 +67,19 @@ body {
 }
 
 .paper-card {
-    padding: 50px;
-    box-shadow:  10px 10px 40px #bdbdbd, -10px -10px 30px #ffffff;
+    padding: 33px;
+    box-shadow:  6px 6px 12px #cecece, -6px -6px 12px #eeeeee;
     border-radius: 50px;
     background-color: #dedede;
     border: 1px solid #d4d4d467;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .paper-card__divider {
     margin: 20px 0;
+    width: 100%;
+    border: 1px solid #d2d1d1
 }
